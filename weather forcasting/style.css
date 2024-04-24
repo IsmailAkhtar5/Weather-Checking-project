@@ -1,0 +1,119 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins" ,sans-serif;
+  
+}
+.container{
+  /* border: 1px solid black; */
+  padding: 0rem;
+  position: relative;
+  background-color: white;
+}
+/* ______________styling for search bar_____________________ */
+.city_name{
+  position: absolute;
+  top: 5px;
+  left:5px;
+  width: 12rem;
+  height: 1.8rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  padding-left: 8px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+::placeholder{
+  color: white;
+  font-size: 10px;
+}
+
+/* ___________________ STYLING FOR COUNTRY NAME ___________________ */
+.country_name{
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* _____________ STYLING FOR DATE AND TIME __________________________ */
+.date_time{
+  text-align: center;
+  font-size: 10px;
+}
+/* ___________________________________- STYLING FOR WEATHER TEMPERATURE ___________________ */
+.weather_temperature{
+text-align: center;
+font-weight: 700;
+font-size: 15px;
+}
+/* _______________________ STYLING FOR FORCASTING _____________________________________ */
+.forcast{
+  /* margin-top: 5px; */
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 5px 15px;
+  display: inline;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  
+}
+/* ______________________________-- STYLING FOR MINIMUM AND MAXIMIM TEMPERATURE___________________ */
+.weather_minmax{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
+  margin-top: 3rem;
+  margin-left: 17%;
+}
+
+
+/* _______________________ STYLING FOR EXTRA WEATHER PROPERTIES _________________- */
+
+.weather_info{
+   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  
+  
+}
+.weather_card{
+  font-size: 15px;
+  text-transform: capitalize;
+  border: 1px solid black;
+  width: 10rem;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  position: relative;
+  & p{
+    text-align: center;
+    
+  }
+}
+/*  ______________ FONT AWESOME STYLINGB __________________------- */
+.fa-solid{
+  position:absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+}
+

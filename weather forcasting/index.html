@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather forcasting app</title>
+<!-- _____________________________ FONT AWESOME LINK HERE _____________________ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!--  _________________ STYLE SHEET LINK HERE ______________________________ -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- ______________________________ GOOGLE FONTS LINK HERE_____________________________ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="container">
+<!-- _______________________ CODE  FOR SEARCH BAR HERE_____________________ -->
+    <form class=" search_city">
+      <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        <input type="text" placeholder="search country or city......" class="city_name">
+    </form>
+
+    <!-- __________________________ MAIN WEATHER DATA _________________________ -->
+
+    <div class="main_weather_data">
+       
+        <h1 class="country_name"></h1>
+        <p class="date_time"> 24-13-2024 </p>
+
+        <div class="weather_forcasting">
+           <h3 class="weather_temperature"></h3>
+           <div class="forcast"></div>
+           <div class="weather_icon"></div>
+
+           <div class="weather_minmax">
+            <p class="weather_max"></p>
+
+            <p class="weather_min"></p>
+           </div>
+        </div>
+    </div>
+<!-- _________________________ EXTRA WEATHER DATA______________________ -->
+ <section class="weather_info">
+
+   <div class="weather_card">
+
+    <i class="fa-solid fa-temperature-half"></i> 
+
+    <div >
+
+      <p >feels like</p>
+      <p class="feels_like">128</p>
+    </div>
+   </div>
+   
+   <div class="weather_card">
+    <i class="fa-solid fa-droplet"></i>
+
+    <div >
+      <p >humididty</p>
+      <p class="humidity"></p>
+    </div>
+   </div>
+   
+   <div class="weather_card">
+
+    <i class="fa-solid fa-hurricane"></i>    
+    <div >
+      <p >pressure</p>
+      <p class="pressure">12</p>
+    </div>
+   </div>
+   
+   <div class="weather_card">
+
+    <i class="fa-solid fa-wind"></i> 
+    <div >
+      <p >wind</p>
+      <p class="wind">12</p>
+    </div>
+   </div>
+</section>
+  </section>
+
+  <!--____________________________ JAVASCRIPT LINK HERE ________________________________  -->
+  <script src="./index.js"></script>
+</body>
+</html>
